@@ -1,5 +1,7 @@
-@import '../../styles/settings';
-@import '../../styles/bourbon/bourbon';
+$_mainColor: #6AB7FC;
+$_errorColor: #FC6A6E;
+$_lightGrey: #f5f5f5;
+$_disabled: darken($_lightGrey, 10%);
 
 
 .button-wrap {
@@ -23,13 +25,13 @@
 	cursor: pointer;
 	&:hover{
 		svg {
-			stroke: darken($mainColor, 25%) !important;
-			@include transition(all 0s);
+			stroke: darken($_mainColor, 25%) !important;
+			transition: all 0s;
 		}
 		&.redBtn{
 			.morph-shape svg{
-				stroke: darken($errorColor, 25%) !important; 
-				@include transition(all 0s);
+				stroke: darken($_errorColor, 25%) !important; 
+				transition: all 0s;
 			}
 		}
 	}
@@ -50,9 +52,9 @@
 
 	font-family: SanFranCuatro;
     font-size: 1rem;
-    color: darken($mainColorD, 15%);
+    color: darken($_mainColorD, 15%);
 
-	@include user-select(none);
+	user-select: none;
 }
 
 .morph-shape {
@@ -65,43 +67,43 @@
 
 .button--line .morph-shape svg {
 	fill: none;
-	stroke: $mainColor;
+	stroke: $_mainColor;
 	stroke-width: 2px;
 	stroke-linecap: round;
-	@include transition(all 0.2s);
+	transition: all 0.2s;
 }
 
 .redBtn{
 	.button__text{
-		color: $errorColor !important;
+		color: $_errorColor !important;
 	}
 	svg {
-		stroke: $errorColor !important;
+		stroke: $_errorColor !important;
 	}
 }
 
 
-.disabledBtn{
+._disabledBtn{
 	pointer-events: none;
 	.button__text{
-		color: $disabled !important;
+		color: $_disabled !important;
 	}
 	svg {
-		stroke: $disabled !important;
+		stroke: $_disabled !important;
 	}
 }
 
 
-.smallDisabled{
+.small_disabled{
 	pointer-events: none;
 	&.elasticBtn{
 		padding: 0.61rem 1.61rem;
 	}
 	.button__text{
-		color: $disabled !important;
+		color: $_disabled !important;
 	}
 	svg {
-		stroke: $disabled !important;
+		stroke: $_disabled !important;
 	}
 }
 
@@ -109,10 +111,10 @@
 .noClick{
 	pointer-events: none;
 	.button__text{
-		color: $disabled !important;
+		color: $_disabled !important;
 	}
 	svg {
-		stroke: $disabled !important;
+		stroke: $_disabled !important;
 	}
 }
 
