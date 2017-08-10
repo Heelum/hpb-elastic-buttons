@@ -73,6 +73,10 @@ varName: string = '<i class="icon ion-ios-checkmark-outline></i>"';
 | mainColor | #6AB7FC | string | no |
 | btnText | - | string | yes |
 
+#### Credits
+
+This is an angular adaptation of codrops "Elastic elements" you can find it [here](https://tympanus.net/codrops/2014/12/15/elastic-svg-elements/)
+
 License
 ----
 
