@@ -1,8 +1,9 @@
 {
   "name": "hpb-elastic-buttons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {},
+  "url": "https://github.com/Heelum/hpb-elastic-buttons",
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
